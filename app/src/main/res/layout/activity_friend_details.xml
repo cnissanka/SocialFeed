@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+
+android:layout_alignBottom="@+id/tv_username"
+android:layout_alignRight="@+id/tv_dob"
+android:layout_alignEnd="@+id/tv_dob"
+    android:weightSum="1">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Account Info"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/textView"
+    android:layout_alignParentTop="true" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="&lt;&lt;Friend Name Here>>"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/tv_name"
+    android:layout_below="@+id/textView"
+    android:layout_alignRight="@+id/tv_gender2"
+    android:layout_alignEnd="@+id/tv_gender2"
+    android:layout_gravity="center_horizontal" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="&lt;&lt;Friend Username>>"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/tv_username"
+    android:layout_alignBaseline="@+id/tv_dob"
+    android:layout_alignBottom="@+id/tv_dob"
+    android:layout_alignLeft="@+id/button5"
+    android:layout_alignStart="@+id/button5"
+    android:layout_gravity="center_horizontal" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="&lt;&lt;Friend DOB>>"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/tv_dob"
+    android:layout_alignBaseline="@+id/tv_gender2"
+    android:layout_alignBottom="@+id/tv_gender2"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="&lt;&lt;Friend Gender>>"
+    android:id="@+id/tv_gender2"
+    android:layout_below="@+id/tv_name"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="5dp"
+    android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="&lt;&lt;Friend Status>>"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/tv_status"
+        android:layout_marginTop="50dp"
+        android:layout_above="@+id/button5"
+        android:layout_alignRight="@+id/tv_gender2"
+        android:layout_alignEnd="@+id/tv_gender2"
+
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Send Friend Request"
+    android:id="@+id/button5"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:onClick="onFriendRequest"
+    android:layout_marginBottom="38dp"
+    android:layout_gravity="center_horizontal" />
+</LinearLayout>

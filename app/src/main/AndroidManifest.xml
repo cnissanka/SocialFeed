@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="awesomeapps.socialfeed">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.Register" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GuestHome">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.GuestHome" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FriendSearch">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.FriendSearch" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChatApp">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.ChatApp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FriendDetails">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.FriendDetails" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SocialGroupCreate">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.SocialGroupCreate" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FriendRequests">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.FriendRequests" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FriendList">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.FriendList" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FriendRequestDetail">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.FriendRequestDetail" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".YourSocialGroups"
+            android:label="@string/title_activity_your_social_groups"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.YourSocialGroups" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".friendDetail">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.friendDetail" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SearchSocialGroup">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.SearchSocialGroup" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SocialGroupDetail">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.SocialGroupDetail" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SocialGroupFeed">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.SocialGroupFeed" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreatePost">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.CreatePost" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GroupManagement">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.GroupManagement" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GroupSettings">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.GroupSettings" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GroupRequests">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.GroupRequests" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GroupMembers">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.GroupMembers" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserDataViewer">
+            <intent-filter>
+                <action android:name="awesomeapps.socialfeed.UserDataViewer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
